@@ -74,6 +74,7 @@ Spring 範例有外部依賴，`java Xxx.java` 單檔跑不起來，本 repo 改
 
   ```java
   ///usr/bin/env jbang "$0" "$@" ; exit $?
+  //JAVA 17
   //DEPS org.springframework.boot:spring-boot-starter:3.4.5
 
   // ...一般的 Spring 程式碼，main 裡 SpringApplication.run(...)
@@ -85,7 +86,13 @@ Spring 範例有外部依賴，`java Xxx.java` 單檔跑不起來，本 repo 改
   # 本機有 jbang
   jbang AsyncExceptionDemo.java
   # 沒有 jbang：Docker（jbangdev/jbang-action，amd64 模擬、稍慢但可用）
-  docker run --rm -v "$PWD":/ws -w /ws jbangdev/jbang-action AsyncExceptionDemo.java
+  # 掛兩個 cache volume，deps 與 JDK 只需下載一次
+  docker run --rm -v "$PWD":/ws -w /ws \
+    -v knowledge-spring-jbang:/root/.jbang -v knowledge-spring-m2:/root/.m2 \
+    jbangdev/jbang-action AsyncExceptionDemo.java
   ```
+
+  注意：映像內建 JDK 11，Spring 6 範例**必須**加 `//JAVA 17` 指示行
+  （漏掉會得到 `class file has wrong version 61.0, should be 55.0`）。
 
 - 筆記內文用一行連過去：「▶ 可執行範例：[AsyncExceptionDemo.java](examples/AsyncExceptionDemo.java)」。
