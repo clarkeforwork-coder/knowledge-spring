@@ -145,7 +145,7 @@ to avoid these container lifecycle issues; see @Bean javadoc for complete detail
 - post processor 與其依賴會**早產**——BFPP 的 `@Bean` 方法要宣告 `static`（實測警告原文為證）
 - 「全廠就緒後」的邏輯掛 `@EventListener(ContextRefreshedEvent)` 或 `SmartLifecycle`，**不是** `@PostConstruct`
 
-第 5 步那位一手包辦 `@Configuration` 解析的最大玩家，是怎麼把你的註解變成一張張設計圖的？@Import、@Conditional 又是在哪個瞬間被判定的？見規劃中的〈BeanDefinition 與 BeanFactoryPostProcessor：Bean 的「設計圖」階段〉。
+第 5 步那位一手包辦 `@Configuration` 解析的最大玩家，是怎麼把你的註解變成一張張設計圖的？@Import、@Conditional 又是在哪個瞬間被判定的？見 [BeanDefinition 與 BeanFactoryPostProcessor：Bean 的「設計圖」階段](bean-definition-and-bfpp.md)。
 
 ## 常見面試題
 
