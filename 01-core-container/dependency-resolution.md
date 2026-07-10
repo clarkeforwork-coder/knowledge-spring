@@ -143,7 +143,7 @@ ObjectProvider<Missing>.getIfAvailable() | null
 - 多實作的正解：顯式 `@Qualifier`，或 `List`（`@Order` 排序）／`Map`（bean 名路由）全收——`Map` 注入＝策略模式一行
 - 泛型參與型別比對（`Store<Apple>` 精準命中）；缺席用 `ObjectProvider`／`Optional`／`required=false` 表達
 
-裁決鏈回答了「注入**誰**」；`@Value("${db.url}")` 的下一個問題是「值從**哪**來」——application.yml、環境變數、系統屬性打架時誰贏？見規劃中的〈Environment、Profile 與 PropertySource〉。
+裁決鏈回答了「注入**誰**」；`@Value("${db.url}")` 的下一個問題是「值從**哪**來」——application.yml、環境變數、系統屬性打架時誰贏？見 [Environment、Profile 與 PropertySource](environment-profiles.md)。
 
 ## 常見面試題
 
