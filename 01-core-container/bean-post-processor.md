@@ -125,7 +125,7 @@ declaration and its dependencies/advisors.
 - 兩條鐵律：工人與其依賴會**早產**（WARNING 會點名兇手）；工人**只加工比它晚出生的 bean**
 - 「not eligible for getting processed」不是雜訊——它預告了某顆 bean 的切面／交易將安靜失效
 
-填依賴的工人還藏著一個大問題沒回答：`@Autowired` 一個型別、容器裡卻有**兩顆**候選 bean 時，它怎麼選？選不出來又怎麼辦？見規劃中的〈依賴解析規則：@Qualifier、@Primary、泛型與集合注入〉。
+填依賴的工人還藏著一個大問題沒回答：`@Autowired` 一個型別、容器裡卻有**兩顆**候選 bean 時，它怎麼選？選不出來又怎麼辦？見[依賴解析規則：@Qualifier、@Primary、泛型與集合注入](dependency-resolution.md)。
 
 ## 常見面試題
 
