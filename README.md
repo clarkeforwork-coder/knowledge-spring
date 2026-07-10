@@ -1,8 +1,8 @@
 # knowledge-spring
 
-![notes](https://img.shields.io/badge/notes-0_/_46_planned-blue)
-![deep dives](https://img.shields.io/badge/🔬_deep_dives-6_planned-purple)
-![roadmap](https://img.shields.io/badge/roadmap-planning-yellow)
+![notes](https://img.shields.io/badge/notes-1_/_46-blue)
+![deep dives](https://img.shields.io/badge/🔬_deep_dives-0_/_6-purple)
+![roadmap](https://img.shields.io/badge/roadmap-in_progress-yellow)
 ![Spring](https://img.shields.io/badge/Spring-6.x_/_Boot_3.x-6DB33F)
 ![Java](https://img.shields.io/badge/Java-17_&_21-orange)
 
@@ -40,7 +40,7 @@ knowledge-java 講了「Bean 的一生」；這一章講**容器本身的一生*
 
 | 筆記 | 深度 | 狀態 |
 |---|---|---|
-| ApplicationContext 啟動全景：refresh() 做了哪些事 | 🔰 | 📝 |
+| [ApplicationContext 啟動全景：refresh() 做了哪些事](01-core-container/container-startup-refresh.md) | 🔰 | ✅ |
 | BeanDefinition 與 BeanFactoryPostProcessor：Bean 的「設計圖」階段 | 🔰 | 📝 |
 | BeanPostProcessor：@Autowired 與 @PostConstruct 其實是誰做的 | 🔰 | 📝 |
 | 依賴解析規則：@Qualifier、@Primary、泛型與集合注入 | 🔰 | 📝 |
