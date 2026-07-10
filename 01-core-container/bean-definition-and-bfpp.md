@@ -125,7 +125,7 @@ class TeamRegistrar implements ImportBeanDefinitionRegistrar {
 - 動態 bean 的正規姿勢是 `ImportBeanDefinitionRegistrar`——`@MapperScan` 靈異現象的謎底
 - lazy、scope、屬性值都只是圖上的欄位，**第 11 步照圖點名施工**（lazy 化的 bean 實測缺席量產）
 
-圖收齊了、也定稿了，第 11 步開始照圖施工——但施工時圖上寫的依賴（`@Autowired`）是誰去填的？`@PostConstruct` 又是誰呼叫的？答案都是第 6 步到職的那批工人：見規劃中的〈BeanPostProcessor：@Autowired 與 @PostConstruct 其實是誰做的〉。
+圖收齊了、也定稿了，第 11 步開始照圖施工——但施工時圖上寫的依賴（`@Autowired`）是誰去填的？`@PostConstruct` 又是誰呼叫的？答案都是第 6 步到職的那批工人：見 [BeanPostProcessor：@Autowired 與 @PostConstruct 其實是誰做的](bean-post-processor.md)。
 
 ## 常見面試題
 
