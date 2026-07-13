@@ -122,7 +122,7 @@ setActiveProfiles("dev")      | 拿到的 Gateway：沙盒閘道（dev）
 - 缺 key 的兩種下場：有 PSPC **啟動即炸**（好結局）；沒有 PSPC **字面值安靜注入**（實測 `${app.missing}` 進了欄位）——非 Boot 環境務必確認 strict 解析
 - `@Profile` 是 `@Conditional` 的特化（第 5 步定案）；**`spring.profiles.active` 本身就是 property**，自動繼承整套疊層規則
 
-Environment 管的是**靜態的值**——啟動時定格、之後不動。容器裡還有一套**動的**通訊機制：`ContextRefreshedEvent` 在[啟動全景](container-startup-refresh.md)裡露過臉，但事件能做的遠不止宣布開幕——解耦業務模組、交易邊界上的回呼都靠它：見規劃中的〈事件機制：ApplicationEvent 與 @EventListener〉。
+Environment 管的是**靜態的值**——啟動時定格、之後不動。容器裡還有一套**動的**通訊機制：`ContextRefreshedEvent` 在[啟動全景](container-startup-refresh.md)裡露過臉，但事件能做的遠不止宣布開幕——解耦業務模組、交易邊界上的回呼都靠它：見[事件機制：ApplicationEvent 與 @EventListener](application-events.md)。
 
 ## 常見面試題
 
