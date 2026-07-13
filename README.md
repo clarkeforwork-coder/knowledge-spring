@@ -1,7 +1,7 @@
 # knowledge-spring
 
-![notes](https://img.shields.io/badge/notes-6_/_46-blue)
-![deep dives](https://img.shields.io/badge/🔬_deep_dives-0_/_6-purple)
+![notes](https://img.shields.io/badge/notes-7_/_46-blue)
+![deep dives](https://img.shields.io/badge/🔬_deep_dives-1_/_6-purple)
 ![roadmap](https://img.shields.io/badge/roadmap-in_progress-yellow)
 ![Spring](https://img.shields.io/badge/Spring-6.x_/_Boot_3.x-6DB33F)
 ![Java](https://img.shields.io/badge/Java-17_&_21-orange)
@@ -46,7 +46,7 @@ knowledge-java 講了「Bean 的一生」；這一章講**容器本身的一生*
 | [依賴解析規則：@Qualifier、@Primary、泛型與集合注入](01-core-container/dependency-resolution.md) | 🔰 | ✅ |
 | [Environment、Profile 與 PropertySource](01-core-container/environment-profiles.md) | 🔰 | ✅ |
 | [事件機制：ApplicationEvent 與 @EventListener](01-core-container/application-events.md) | 🔰 | ✅ |
-| 循環依賴與三級快取 | 🔬 | 📝 |
+| [循環依賴與三級快取](01-core-container/deep-circular-dependency.md) | 🔬 | ✅ |
 
 ### 02 - 宣告式基礎設施與代理
 
