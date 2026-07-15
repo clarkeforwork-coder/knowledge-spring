@@ -79,7 +79,7 @@ INFO: No task executor bean found for async processing:
 no bean of type TaskExecutor and no bean named 'taskExecutor' either
 ```
 
-沒配 executor 時，Framework 退回 `SimpleAsyncTaskExecutor`——**每個任務開一條新 thread、不設上限**。這句 INFO 是 `@Async` 整包地雷（executor 配置、例外去哪了、回傳值）的入口，本篇點到為止：見規劃中的〈@Async：執行緒池在哪、例外去了哪〉（第 02 章）。
+沒配 executor 時，Framework 退回 `SimpleAsyncTaskExecutor`——**每個任務開一條新 thread、不設上限**。這句 INFO 是 `@Async` 整包地雷（executor 配置、例外去哪了、回傳值）的入口，本篇點到為止：見 [@Async：執行緒池在哪、例外去了哪](../02-declarative-infrastructure/async-under-the-hood.md)。
 
 ### 事件 vs 直接呼叫：選擇的準繩
 
