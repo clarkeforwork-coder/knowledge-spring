@@ -14,7 +14,7 @@
 
 1. `publishEvent()` **返回之前，所有 listener 已經跑完**——它不是「丟出去就走」
 2. **listener 的例外會炸回發佈者**，而且排在後面的 listener 被跳過——「解耦」只是程式碼上的，命運還綁在一起
-3. 同一條 thread 意味著**同一個交易**——listener 失敗會 rollback 發佈者的交易。這既是 feature（資料一致）也是坑（寄信失敗退你的單），正確處理這條邊界的工具是 `@TransactionalEventListener`，見規劃中的〈@TransactionalEventListener：交易邊界上的事件〉（第 02 章）
+3. 同一條 thread 意味著**同一個交易**——listener 失敗會 rollback 發佈者的交易。這既是 feature（資料一致）也是坑（寄信失敗退你的單），正確處理這條邊界的工具是 `@TransactionalEventListener`，見 [@TransactionalEventListener：交易邊界上的事件](../02-declarative-infrastructure/transactional-event-listener.md)
 
 ### 基本盤：發佈與監聽
 

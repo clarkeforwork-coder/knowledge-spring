@@ -1,6 +1,6 @@
 # knowledge-spring
 
-![notes](https://img.shields.io/badge/notes-9_/_46-blue)
+![notes](https://img.shields.io/badge/notes-10_/_46-blue)
 ![deep dives](https://img.shields.io/badge/🔬_deep_dives-1_/_6-purple)
 ![roadmap](https://img.shields.io/badge/roadmap-in_progress-yellow)
 ![Spring](https://img.shields.io/badge/Spring-6.x_/_Boot_3.x-6DB33F)
@@ -56,7 +56,7 @@ knowledge-java 用 @Transactional 講透了 proxy 失效；這一章把同一套
 |---|---|---|
 | [@Async：執行緒池在哪、例外去了哪](02-declarative-infrastructure/async-under-the-hood.md) | 🔰 | ✅ |
 | [@Cacheable：快取抽象與它的 key 地雷](02-declarative-infrastructure/cache-abstraction.md) | 🔰 | ✅ |
-| @TransactionalEventListener：交易邊界上的事件 | 🔰 | 📝 |
+| [@TransactionalEventListener：交易邊界上的事件](02-declarative-infrastructure/transactional-event-listener.md) | 🔰 | ✅ |
 | @Validated：方法級驗證 | 🔰 | 📝 |
 | Spring Retry：@Retryable 與退避策略 | 🔰 | 📝 |
 | proxy 是何時、被誰裝上的：AbstractAutoProxyCreator 追讀 | 🔬 | 📝 |

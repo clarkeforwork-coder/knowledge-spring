@@ -136,7 +136,7 @@ evict 後再 quote("apple")：88.0
 - 抽象層**沒有 TTL**：過期是 provider 的事，一致性靠你在更新路徑編排 `@CacheEvict`／`@CachePut`（髒讀實測 100→88）
 - 彩蛋教訓：**別透過 proxy 讀欄位**——方法轉發、欄位不轉發
 
-案例四的 evict 還藏著一個更深的問題：如果 evict 所在的方法包在交易裡，**交易還沒 commit 就先清了快取**，別的請求可能馬上用舊資料回填——清了等於沒清。「等交易成功再做」正是下一篇的主題：見規劃中的〈@TransactionalEventListener：交易邊界上的事件〉。
+案例四的 evict 還藏著一個更深的問題：如果 evict 所在的方法包在交易裡，**交易還沒 commit 就先清了快取**，別的請求可能馬上用舊資料回填——清了等於沒清。「等交易成功再做」正是下一篇的主題：見 [@TransactionalEventListener：交易邊界上的事件](transactional-event-listener.md)。
 
 ## 常見面試題
 
