@@ -148,7 +148,7 @@ orders 表筆數 = 2（D004 已提交）
 - **AFTER_COMMIT 裡寫 DB 要 REQUIRES_NEW**：直接寫是搭在已完結交易的連線上（實測 `autocommit=false`），落地與否是實作意外不是契約
 - **AFTER_COMMIT 的例外被吞掉**（實測 SEVERE、呼叫端無感）——失敗無人重試，送達保證要另尋 outbox
 
-到這裡，「proxy 宣告式家族」的三個成員（@Async、@Cacheable、@TransactionalEventListener）都解剖完了。下一個成員把驗證邏輯搬出 Controller：`@Validated` 讓**任何** bean 的方法參數都能掛 constraint——但它和 MVC 的 `@Valid` 是兩套機制，混淆的代價是「驗證悄悄沒跑」：見規劃中的〈@Validated：方法級驗證〉。
+到這裡，「proxy 宣告式家族」的三個成員（@Async、@Cacheable、@TransactionalEventListener）都解剖完了。下一個成員把驗證邏輯搬出 Controller：`@Validated` 讓**任何** bean 的方法參數都能掛 constraint——但它和 MVC 的 `@Valid` 是兩套機制，混淆的代價是「驗證悄悄沒跑」：見 [@Validated：方法級驗證](method-validation.md)。
 
 ## 常見面試題
 
