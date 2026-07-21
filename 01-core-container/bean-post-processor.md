@@ -101,7 +101,7 @@ declaration and its dependencies/advisors.
 
 翻譯：`dep` 為了餵飽正在建立的工人 `eagerBpp`，被迫在其他工人（例如 auto-proxying 的那位）到職前出生——它這輩子都不會被那些工人加工了。若 `dep` 上有 `@Transactional`，症狀就是**交易安靜地消失**。6.2.x 的訊息甚至在 `[eagerBpp]` 處直接點名肇事者，比舊版的 INFO 好查得多。修法依序：BPP 不要依賴業務 bean；真有需要，改成用時才取（`ObjectProvider`，[knowledge-java 講過的](../../knowledge-java/03-spring-to-spring-boot/bean-lifecycle-and-scope.md)同一招）。
 
-順帶一個彩蛋：警告裡 config 類別的型別印作 `AppEager$$SpringCGLIB$$0`——`@Configuration` 類別本身也被 CGLIB 動過手腳（這是 `@Bean` 方法互相呼叫仍拿到同一顆 singleton 的原因），這條線留給規劃中的〈proxy 是何時、被誰裝上的〉。
+順帶一個彩蛋：警告裡 config 類別的型別印作 `AppEager$$SpringCGLIB$$0`——`@Configuration` 類別本身也被 CGLIB 動過手腳（這是 `@Bean` 方法互相呼叫仍拿到同一顆 singleton 的原因），這條線的完整清算見 [proxy 是何時、被誰裝上的](../02-declarative-infrastructure/deep-proxy-creation.md)。
 
 ## 技術優缺點
 

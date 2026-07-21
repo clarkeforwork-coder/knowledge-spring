@@ -1,7 +1,7 @@
 # knowledge-spring
 
-![notes](https://img.shields.io/badge/notes-12_/_46-blue)
-![deep dives](https://img.shields.io/badge/🔬_deep_dives-1_/_6-purple)
+![notes](https://img.shields.io/badge/notes-13_/_46-blue)
+![deep dives](https://img.shields.io/badge/🔬_deep_dives-2_/_6-purple)
 ![roadmap](https://img.shields.io/badge/roadmap-in_progress-yellow)
 ![Spring](https://img.shields.io/badge/Spring-6.x_/_Boot_3.x-6DB33F)
 ![Java](https://img.shields.io/badge/Java-17_&_21-orange)
@@ -59,7 +59,7 @@ knowledge-java 用 @Transactional 講透了 proxy 失效；這一章把同一套
 | [@TransactionalEventListener：交易邊界上的事件](02-declarative-infrastructure/transactional-event-listener.md) | 🔰 | ✅ |
 | [@Validated：方法級驗證](02-declarative-infrastructure/method-validation.md) | 🔰 | ✅ |
 | [Spring Retry：@Retryable 與退避策略](02-declarative-infrastructure/spring-retry.md) | 🔰 | ✅ |
-| proxy 是何時、被誰裝上的：AbstractAutoProxyCreator 追讀 | 🔬 | 📝 |
+| [proxy 是何時、被誰裝上的：AbstractAutoProxyCreator 追讀](02-declarative-infrastructure/deep-proxy-creation.md) | 🔬 | ✅ |
 
 ### 03 - Spring Boot 深入
 

@@ -136,7 +136,9 @@ fetch 第 1 次嘗試（距上次 -）
 - `@Recover` 三對齊（例外、參數、回傳型別）；**它的存在會把類別內不匹配的失敗換型成 `ExhaustedRetryException`**（三情境實測）——上游 catch 要防
 - self-invocation 第四次無聲失效；spring-retry 的傳遞依賴是舊版 Spring，**引週邊專案先釘版本**
 
-到這裡，本章五位家族成員（@Async、@Cacheable、@TransactionalEventListener、@Validated、@Retryable）全部解剖完畢，每一篇都說了同一句話：「又是 proxy」。章末的深入文就來清算這句話：proxy 到底**何時**、**被誰**、**怎麼**裝上的？JDK 與 CGLIB 怎麼選？`@Configuration` 類別的 `$$SpringCGLIB$$` 又是哪一種？見規劃中的〈proxy 是何時、被誰裝上的：AbstractAutoProxyCreator 追讀〉。
+到這裡，本章五位家族成員（@Async、@Cacheable、@TransactionalEventListener、@Validated、@Retryable）全部解剖完畢，每一篇都說了同一句話：「又是 proxy」。章末的深入文就來清算這句話：proxy 到底**何時**、**被誰**、**怎麼**裝上的？JDK 與 CGLIB 怎麼選？`@Configuration` 類別的 `$$SpringCGLIB$$` 又是哪一種？
+
+🔬 想深入：[proxy 是何時、被誰裝上的：AbstractAutoProxyCreator 追讀](deep-proxy-creation.md)
 
 ## 常見面試題
 
