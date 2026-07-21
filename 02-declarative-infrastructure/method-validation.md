@@ -130,7 +130,7 @@ outer() 直接呼叫 this.transfer("", -99)…
 - **回傳值也能驗**（`@NotNull` 攔下回 null 的方法）——對下游失手的最後防線
 - proxy 失效清單第三次應驗：self-invocation 靜默跳過——@Async／@Cacheable／@Validated 同病三症
 
-驗證擋的是「不該進來的」；但有些呼叫是「進來了、也合法，只是**暫時**失敗」——網路抖一下、DB 死鎖、第三方 API 限流。把「再試一次」宣告化，就是下一位家族成員：見規劃中的〈Spring Retry：@Retryable 與退避策略〉。
+驗證擋的是「不該進來的」；但有些呼叫是「進來了、也合法，只是**暫時**失敗」——網路抖一下、DB 死鎖、第三方 API 限流。把「再試一次」宣告化，就是下一位家族成員：見 [Spring Retry：@Retryable 與退避策略](spring-retry.md)。
 
 ## 常見面試題
 
