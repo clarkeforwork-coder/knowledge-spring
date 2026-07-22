@@ -76,7 +76,7 @@ static MyBeanFactoryPostProcessor mybfpp() {   // ✅ static：不必先建出 C
 | `@PostConstruct` | 第 11 步，**自己**下線時 | ❌ 只保證自己就緒——別的 bean 可能還沒建 |
 | `SmartLifecycle.start()` | 第 12 步，事件**之前** | ✅ 全部 singleton 就緒；`close()` 時對稱回呼 `stop()` |
 | `@EventListener(ContextRefreshedEvent)` | 第 12 步，最後 | ✅ 全廠開幕的廣播，最通用的「就緒後」掛載點 |
-| Boot 的 `ApplicationRunner` | refresh() 返回之後 | ✅ Boot 應用的首選（見規劃中的〈SpringApplication.run() 到底跑了什麼〉） |
+| Boot 的 `ApplicationRunner` | refresh() 返回之後 | ✅ Boot 應用的首選（見 [SpringApplication.run() 到底跑了什麼](../03-boot-internals/springapplication-run.md)） |
 
 ## 實際案例
 
