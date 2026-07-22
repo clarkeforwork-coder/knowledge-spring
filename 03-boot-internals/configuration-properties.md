@@ -122,7 +122,7 @@ MyAppProps[name=來自環境變數, owner=camelCase寫的key, retryCount=3, time
 - 錯誤三張臉：**鍵錯沉默忽略（實測蒸發）、型別錯啟動炸、值非法 `@Validated` fail fast**——後兩者附 Property/Value/**Origin**/Reason 結構化報告
 - 對「鍵錯沉默」的防線：`spring-boot-configuration-processor` 的 IDE 提示＋配置啟動測試
 
-自動配置（knowledge-java 講過的條件裝配）＋本篇的型別安全配置，正是**自製 starter** 的兩塊積木——把團隊共用的基礎設施包成「引依賴即生效」的模組：見規劃中的〈自製一個 starter〉。
+自動配置（knowledge-java 講過的條件裝配）＋本篇的型別安全配置，正是**自製 starter** 的兩塊積木——把團隊共用的基礎設施包成「引依賴即生效」的模組：見[自製一個 starter](custom-starter.md)。
 
 ## 常見面試題
 

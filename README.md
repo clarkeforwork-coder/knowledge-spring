@@ -1,6 +1,6 @@
 # knowledge-spring
 
-![notes](https://img.shields.io/badge/notes-15_/_46-blue)
+![notes](https://img.shields.io/badge/notes-16_/_46-blue)
 ![deep dives](https://img.shields.io/badge/🔬_deep_dives-2_/_6-purple)
 ![roadmap](https://img.shields.io/badge/roadmap-in_progress-yellow)
 ![Spring](https://img.shields.io/badge/Spring-6.x_/_Boot_3.x-6DB33F)
@@ -69,7 +69,7 @@ knowledge-java 講了條件註解與自動配置的原理；這一章講 Boot �
 |---|---|---|
 | [SpringApplication.run() 到底跑了什麼](03-boot-internals/springapplication-run.md) | 🔰 | ✅ |
 | [@ConfigurationProperties 與 relaxed binding](03-boot-internals/configuration-properties.md) | 🔰 | ✅ |
-| 自製一個 starter | 🔰 | 📝 |
+| [自製一個 starter](03-boot-internals/custom-starter.md) | 🔰 | ✅ |
 | Actuator：health、metrics 與 endpoint 安全 | 🔰 | 📝 |
 | 可執行 jar 解剖、layered jar 與優雅停機 | 🔰 | 📝 |
 | 內嵌 Tomcat 是如何被啟動的 | 🔬 | 📝 |
