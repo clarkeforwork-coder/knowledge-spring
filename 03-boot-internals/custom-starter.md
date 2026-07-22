@@ -122,7 +122,7 @@ getBean(Notifier.class) 炸了：No qualifying bean of type 'Notifier' available
 - 使用者的三檔控制力：**不動 → 調屬性 → 換實作**（三情境實測）
 - 排錯先看 **`ConditionEvaluationReport`**（`--debug` 或程式化讀取）——自動配置世界的對帳單
 
-starter 讓功能「引了就有」——Boot 自家把這招用得最徹底的，是那包「引了就有一整套營運端點」的 Actuator：health、metrics、環境快照，以及它們的安全邊界。見規劃中的〈Actuator：health、metrics 與 endpoint 安全〉。
+starter 讓功能「引了就有」——Boot 自家把這招用得最徹底的，是那包「引了就有一整套營運端點」的 Actuator：health、metrics、環境快照，以及它們的安全邊界。見 [Actuator：health、metrics 與 endpoint 安全](actuator.md)。
 
 ## 常見面試題
 
