@@ -136,7 +136,7 @@ GET /actuator/env/my.secret           → {"source": "commandLineArgs", "value":
 - metrics 走 **Micrometer 門面**：先列名再鑽取、tag 可切維度（實測 `jvm.memory.used`）
 - `/env` 在 Boot 3 **預設遮罩值、保留來源**（實測 `******`＋`commandLineArgs`）——即便如此，營運端點的三層防線（少曝光、上安全、隔 port）仍是標配
 
-營運端點有了，下一個問題輪到**交付物本身**：`mvn package` 出來的那顆 fat jar 憑什麼 `java -jar` 就能跑？裡面的 jar 套 jar 是怎麼被載入的？滾動更新時怎麼「說完最後一句話再下班」？見規劃中的〈可執行 jar 解剖、layered jar 與優雅停機〉。
+營運端點有了，下一個問題輪到**交付物本身**：`mvn package` 出來的那顆 fat jar 憑什麼 `java -jar` 就能跑？裡面的 jar 套 jar 是怎麼被載入的？滾動更新時怎麼「說完最後一句話再下班」？見[可執行 jar 解剖、layered jar 與優雅停機](executable-jar.md)。
 
 ## 常見面試題
 
