@@ -121,7 +121,7 @@ run() 返回
 - **兩套事件體系**：早期四個 Boot 事件只有程式化／`spring.factories` 註冊聽得到，bean listener 物理性沉默（實測）
 - 「就緒後」的正確位子是 **`ApplicationRunner`**（實測順序：@PostConstruct → SmartLifecycle → ContextRefreshed → started → runners → ready）——ready 在 runner 之後，失敗擋在對外服務之前
 
-`b` 步把 `application.yml` 疊進了 Environment——但 `server.port=8080` 這行字串是怎麼變成型別安全的 `int`、`SERVER_PORT` 環境變數為什麼也對得上、`@ConfigurationProperties` 又比 `@Value` 好在哪？下一篇拆綁定機制：見規劃中的〈@ConfigurationProperties 與 relaxed binding〉。
+`b` 步把 `application.yml` 疊進了 Environment——但 `server.port=8080` 這行字串是怎麼變成型別安全的 `int`、`SERVER_PORT` 環境變數為什麼也對得上、`@ConfigurationProperties` 又比 `@Value` 好在哪？下一篇拆綁定機制：見 [@ConfigurationProperties 與 relaxed binding](configuration-properties.md)。
 
 ## 常見面試題
 
