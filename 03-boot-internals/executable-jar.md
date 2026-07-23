@@ -144,7 +144,9 @@ curl 結束碼 52（Empty reply from server）、回應空白
 - 優雅停機一行 `server.shutdown=graceful`：實測 **SIGTERM 後等完 in-flight 才關**（stop 耗 4.2s、客戶端 200）；immediate 對照組 **0.2s 下線、curl 52 腰斬**
 - k8s 配合：`terminationGracePeriodSeconds ＞ timeout-per-shutdown-phase`＋`preStop` 摘流量——兩個數字一起 review
 
-交付物解剖完了，只剩一個懸了三章的問題：`refresh()` 第 9 步 `onRefresh()` 裡，**內嵌 Tomcat 到底是怎麼被拉起來的**？誰 new 的它、request 又是怎麼從 Tomcat 的 thread 走進 `DispatcherServlet` 的？第 03 章的章末深入文見。
+交付物解剖完了，只剩一個懸了三章的問題：`refresh()` 第 9 步 `onRefresh()` 裡，**內嵌 Tomcat 到底是怎麼被拉起來的**？誰 new 的它、request 又是怎麼從 Tomcat 的 thread 走進 `DispatcherServlet` 的？
+
+🔬 想深入：[內嵌 Tomcat 是如何被啟動的](deep-embedded-tomcat.md)
 
 ## 常見面試題
 

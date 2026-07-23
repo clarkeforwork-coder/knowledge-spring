@@ -1,7 +1,7 @@
 # knowledge-spring
 
-![notes](https://img.shields.io/badge/notes-18_/_46-blue)
-![deep dives](https://img.shields.io/badge/🔬_deep_dives-2_/_6-purple)
+![notes](https://img.shields.io/badge/notes-19_/_46-blue)
+![deep dives](https://img.shields.io/badge/🔬_deep_dives-3_/_6-purple)
 ![roadmap](https://img.shields.io/badge/roadmap-in_progress-yellow)
 ![Spring](https://img.shields.io/badge/Spring-6.x_/_Boot_3.x-6DB33F)
 ![Java](https://img.shields.io/badge/Java-17_&_21-orange)
@@ -72,7 +72,7 @@ knowledge-java 講了條件註解與自動配置的原理；這一章講 Boot �
 | [自製一個 starter](03-boot-internals/custom-starter.md) | 🔰 | ✅ |
 | [Actuator：health、metrics 與 endpoint 安全](03-boot-internals/actuator.md) | 🔰 | ✅ |
 | [可執行 jar 解剖、layered jar 與優雅停機](03-boot-internals/executable-jar.md) | 🔰 | ✅ |
-| 內嵌 Tomcat 是如何被啟動的 | 🔬 | 📝 |
+| [內嵌 Tomcat 是如何被啟動的](03-boot-internals/deep-embedded-tomcat.md) | 🔬 | ✅ |
 
 ### 04 - Web 進階
 

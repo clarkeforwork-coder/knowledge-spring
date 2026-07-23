@@ -30,7 +30,7 @@
   6  registerBeanPostProcessors         ★ 工人先建立、就位——但還沒開工
   7  initMessageSource                  i18n
   8  initApplicationEventMulticaster    事件廣播器
-  9  onRefresh                          子類鉤子（Boot 的內嵌 Tomcat 在這裡啟動）
+  9  onRefresh                          子類鉤子（Boot 的內嵌 Tomcat 在這裡「建立」——開門是另一步，見第 03 章深入文）
  10  registerListeners                  掛上事件監聽器
 
 第三幕：量產、開幕
