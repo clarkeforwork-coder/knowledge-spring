@@ -25,6 +25,8 @@ Spring 生態技術筆記。[knowledge-java](../knowledge-java) 的第 03 章把
 
 **範圍**：Spring Framework / Boot / MVC / Data JPA / Security / Batch / 測試。Spring Cloud、微服務架構、Redis、訊息佇列**不收**，維持 `knowledge-*` 家族的既有邊界，未來以其他 repo 承接。
 
+**動手練習**：[starter-template/](starter-template/) 是跟著筆記練習用的 Spring Boot 3.x 骨架專案（Maven Wrapper、`GET /hello`、actuator），複製一份就能開始。
+
 ## 筆記深度：雙軌制
 
 | 標記 | 軌道 | 說明 |
@@ -147,5 +149,6 @@ knowledge-java 講了分層測試策略（@WebMvcTest / @DataJpaTest / @SpringBo
 - 🔰 筆記結尾以「🔬 想深入：[標題](deep-xxx.md)」連到對應的深入筆記
 - 與 knowledge-java 重疊的主題：開頭連回對應篇、不重寫基礎，從該篇結尾接下去
 - 可執行範例採混合制：預設文內 snippet；需要跑起來才看得到結果的主題，
-  在該章 `examples/` 附 **JBang 單檔**（檔頭 `//DEPS` 宣告 Spring 依賴，見 TEMPLATE.md）
+  在該章 `examples/` 附 **JBang 單檔**（檔頭 `//DEPS` 宣告 Spring 依賴，見 TEMPLATE.md）；
+  唯一的 Maven 專案是根目錄的 [starter-template/](starter-template/) 跟練骨架
 - 狀態：✅ 完成（符合模板）/ 🔧 待翻新 / 🚧 進行中 / 📝 待補
