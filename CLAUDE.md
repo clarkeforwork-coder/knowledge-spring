@@ -51,6 +51,8 @@ Spring 生態技術筆記 repo（knowledge-* 家族的一員，portfolio 的一�
 - 預設文內 snippet，力求「複製進專案就能用」。
 - 只有「不跑看不出結果」的主題（容器啟動順序、proxy 行為、快取命中、Batch 重啟）
   才附範例檔：放該章 `examples/` 子目錄、**單一 .java 檔（JBang）**，不引入 Maven/Gradle 專案。
+- **唯一例外**：根目錄 `starter-template/` 是讀者跟練用的 Spring Boot 骨架專案（Maven + Wrapper、單一模組），
+  不受「不引入 Maven/Gradle 專案」限制。筆記內的 `examples/` 仍維持 JBang 單檔。
 
 ## README 是索引與進度表
 
