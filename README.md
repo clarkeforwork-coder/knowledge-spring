@@ -1,6 +1,6 @@
 # knowledge-spring
 
-![notes](https://img.shields.io/badge/notes-19_/_46-blue)
+![notes](https://img.shields.io/badge/notes-20_/_46-blue)
 ![deep dives](https://img.shields.io/badge/🔬_deep_dives-3_/_6-purple)
 ![roadmap](https://img.shields.io/badge/roadmap-in_progress-yellow)
 ![Spring](https://img.shields.io/badge/Spring-6.x_/_Boot_3.x-6DB33F)
@@ -105,7 +105,7 @@ knowledge-java 08 章講了 JPA/Hibernate 本體（N+1、一級快取、鎖）�
 
 | 筆記 | 深度 | 狀態 |
 |---|---|---|
-| Filter chain 架構：Security 不在 MVC 裡 | 🔰 | 📝 |
+| [Filter chain 架構：Security 不在 MVC 裡](06-security/security-filter-chain.md) | 🔰 | ✅ |
 | 認證流程：AuthenticationManager 與 SecurityContext | 🔰 | 📝 |
 | 授權：URL 規則與方法級安全 | 🔰 | 📝 |
 | PasswordEncoder 與 UserDetailsService | 🔰 | 📝 |
