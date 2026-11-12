@@ -25,7 +25,7 @@ Spring 生態技術筆記。[knowledge-java](../knowledge-java) 的第 03 章把
 
 **範圍**：Spring Framework / Boot / MVC / Data JPA / Security / Batch / 測試。Spring Cloud、微服務架構、Redis、訊息佇列**不收**，維持 `knowledge-*` 家族的既有邊界，未來以其他 repo 承接。
 
-**動手練習**：[starter-template/](starter-template/) 是跟著筆記練習用的 Spring Boot 3.x 骨架專案（Maven Wrapper、`GET /hello`、actuator），複製一份就能開始。
+**動手練習**：[starter-template/](starter-template/) 是跟著筆記練習用的 Spring Boot 4.x 骨架專案（Maven Wrapper、`GET /hello`、actuator），複製一份就能開始。
 
 ## 筆記深度：雙軌制
 

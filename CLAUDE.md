@@ -40,7 +40,7 @@ Spring 生態技術筆記 repo（knowledge-* 家族的一員，portfolio 的一�
 
 - 筆記裡的程式碼輸出、行為描述**必須實測**，不可憑印象編造；
   實測與預期不符時，修正筆記內容而非數據。
-- 版本基準：Spring Boot 3.x / Spring Framework 6.x / JDK 17（Temurin）。
+- 版本基準：Spring Boot 4.x / Spring Framework 7.x / JDK 17（Temurin）。
 - Spring 範例以 **JBang 單檔**驗證（檔頭 `//DEPS` 宣告依賴）。本機未裝 jbang 時走 Docker
   （已驗證可用，amd64 模擬）：
   `docker run --rm -v "$PWD":/ws -w /ws jbangdev/jbang-action Xxx.java`
